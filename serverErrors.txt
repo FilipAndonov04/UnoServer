@@ -1,0 +1,652 @@
+2025-02-22T11:34:11.534121100
+Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1116)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1103)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:190)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:35)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-02-22T17:39:25.885564100
+Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1116)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1103)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:190)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:35)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-02-22T17:45:12.342435700
+Cannot invoke "bg.sofia.uni.fmi.mjt.uno.game.Game.getGameLogs()" because "this.currentGame" is null
+java.lang.NullPointerException: Cannot invoke "bg.sofia.uni.fmi.mjt.uno.game.Game.getGameLogs()" because "this.currentGame" is null
+	at bg.sofia.uni.fmi.mjt.uno.user.UnoUser.getGameSummary(UnoUser.java:216)
+	at bg.sofia.uni.fmi.mjt.uno.user.command.SummaryCommand.execute(SummaryCommand.java:27)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.handleInput(ClientRequestHandler.java:64)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:41)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-02-22T17:45:40.626942400
+Cannot invoke "bg.sofia.uni.fmi.mjt.uno.game.Game.getGameLogs()" because "this.currentGame" is null
+java.lang.NullPointerException: Cannot invoke "bg.sofia.uni.fmi.mjt.uno.game.Game.getGameLogs()" because "this.currentGame" is null
+	at bg.sofia.uni.fmi.mjt.uno.user.UnoUser.getGameSummary(UnoUser.java:216)
+	at bg.sofia.uni.fmi.mjt.uno.user.command.SummaryCommand.execute(SummaryCommand.java:27)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.handleInput(ClientRequestHandler.java:64)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:41)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-02-22T17:47:36.206995600
+Cannot invoke "bg.sofia.uni.fmi.mjt.uno.game.Game.getGameLogs()" because "this.currentGame" is null
+java.lang.NullPointerException: Cannot invoke "bg.sofia.uni.fmi.mjt.uno.game.Game.getGameLogs()" because "this.currentGame" is null
+	at bg.sofia.uni.fmi.mjt.uno.user.UnoUser.getGameSummary(UnoUser.java:216)
+	at bg.sofia.uni.fmi.mjt.uno.user.command.SummaryCommand.execute(SummaryCommand.java:27)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.handleInput(ClientRequestHandler.java:64)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:41)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-02-22T17:49:30.290734400
+Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1116)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1103)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:190)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:35)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-02-22T17:51:19.272054800
+Cannot invoke "bg.sofia.uni.fmi.mjt.uno.game.Game.getGameLogs()" because "this.currentGame" is null
+java.lang.NullPointerException: Cannot invoke "bg.sofia.uni.fmi.mjt.uno.game.Game.getGameLogs()" because "this.currentGame" is null
+	at bg.sofia.uni.fmi.mjt.uno.user.UnoUser.getGameSummary(UnoUser.java:216)
+	at bg.sofia.uni.fmi.mjt.uno.user.command.SummaryCommand.execute(SummaryCommand.java:27)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.handleInput(ClientRequestHandler.java:64)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:41)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-02-22T18:32:05.215652800
+Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1116)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1103)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:190)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-02-22T18:41:21.510278300
+For input string: ""
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:565)
+	at java.base/java.lang.Integer.parseInt(Integer.java:685)
+	at bg.sofia.uni.fmi.mjt.uno.user.command.PlayCardCommand.fromString(PlayCardCommand.java:40)
+	at bg.sofia.uni.fmi.mjt.uno.user.command.Command.createFromFirstWord(Command.java:33)
+	at bg.sofia.uni.fmi.mjt.uno.user.command.Command.create(Command.java:16)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.handleInput(ClientRequestHandler.java:59)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:43)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-02-22T22:06:28.991483900
+Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1116)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1103)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:190)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:38)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-02-22T22:13:59.801183900
+Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1116)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1103)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:190)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:38)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-02-22T22:14:22.409301700
+Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1116)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1103)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:190)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:38)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-02-22T22:20:26.757056700
+Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1116)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1103)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:190)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:38)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-02-22T22:29:40.115688700
+Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1116)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1103)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:190)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:38)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-02-22T22:53:33.390103200
+Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1116)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1103)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:190)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:38)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-02-22T22:53:34.792601100
+Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1116)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1103)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:190)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:38)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-02-22T22:53:35.830349700
+Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1116)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1103)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:190)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:38)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-02-23T11:59:49.464464900
+null
+java.lang.UnsupportedOperationException
+	at java.base/java.util.AbstractList.remove(AbstractList.java:169)
+	at java.base/java.util.List.removeFirst(List.java:862)
+	at bg.sofia.uni.fmi.mjt.uno.user.command.Command.create(Command.java:25)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.handleInput(ClientRequestHandler.java:63)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:47)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-02-23T12:00:03.944860900
+null
+java.lang.UnsupportedOperationException
+	at java.base/java.util.AbstractList.remove(AbstractList.java:169)
+	at java.base/java.util.List.removeFirst(List.java:862)
+	at bg.sofia.uni.fmi.mjt.uno.user.command.Command.create(Command.java:25)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.handleInput(ClientRequestHandler.java:63)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:47)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-02-23T12:00:06.568498200
+null
+java.lang.UnsupportedOperationException
+	at java.base/java.util.AbstractList.remove(AbstractList.java:169)
+	at java.base/java.util.List.removeFirst(List.java:862)
+	at bg.sofia.uni.fmi.mjt.uno.user.command.Command.create(Command.java:25)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.handleInput(ClientRequestHandler.java:63)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:47)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-02-23T12:00:14.830520500
+null
+java.lang.UnsupportedOperationException
+	at java.base/java.util.AbstractList.remove(AbstractList.java:169)
+	at java.base/java.util.List.removeFirst(List.java:862)
+	at bg.sofia.uni.fmi.mjt.uno.user.command.Command.create(Command.java:25)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.handleInput(ClientRequestHandler.java:63)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:47)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-02-23T12:00:26.643063600
+null
+java.lang.UnsupportedOperationException
+	at java.base/java.util.AbstractList.remove(AbstractList.java:169)
+	at java.base/java.util.List.removeFirst(List.java:862)
+	at bg.sofia.uni.fmi.mjt.uno.user.command.Command.create(Command.java:25)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.handleInput(ClientRequestHandler.java:63)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:47)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-02-23T12:04:13.707232200
+null
+java.lang.UnsupportedOperationException
+2025-02-23T12:20:41.295129600
+Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1116)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1103)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:190)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:40)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-02-23T12:23:18.080275900
+Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1116)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1103)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:190)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:40)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-02-23T12:30:12.667854400
+Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1116)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1103)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:190)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:40)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-02-23T12:31:19.282622100
+Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1116)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1103)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:190)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:40)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-02-23T13:55:28.855887100
+Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1116)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1103)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:190)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:40)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-02-23T17:17:45.026124700
+bg.sofia.uni.fmi.mjt.uno.game.exception.GameException: Game is full!
+java.lang.RuntimeException: bg.sofia.uni.fmi.mjt.uno.game.exception.GameException: Game is full!
+	at bg.sofia.uni.fmi.mjt.uno.user.command.JoinGameCommand.execute(JoinGameCommand.java:36)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.handleInput(ClientRequestHandler.java:70)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:47)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: bg.sofia.uni.fmi.mjt.uno.game.exception.GameException: Game is full!
+	at bg.sofia.uni.fmi.mjt.uno.game.UnoGame.addPlayer(UnoGame.java:98)
+	at bg.sofia.uni.fmi.mjt.uno.user.UnoUser.joinGame(UnoUser.java:118)
+	at bg.sofia.uni.fmi.mjt.uno.user.command.JoinGameCommand.execute(JoinGameCommand.java:34)
+	... 5 more
+
+2025-02-23T17:18:42.497793700
+bg.sofia.uni.fmi.mjt.uno.game.exception.GameException: Game is full!
+java.lang.RuntimeException: bg.sofia.uni.fmi.mjt.uno.game.exception.GameException: Game is full!
+	at bg.sofia.uni.fmi.mjt.uno.user.command.JoinGameCommand.execute(JoinGameCommand.java:36)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.handleInput(ClientRequestHandler.java:70)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:47)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: bg.sofia.uni.fmi.mjt.uno.game.exception.GameException: Game is full!
+	at bg.sofia.uni.fmi.mjt.uno.game.UnoGame.addPlayer(UnoGame.java:98)
+	at bg.sofia.uni.fmi.mjt.uno.user.UnoUser.joinGame(UnoUser.java:118)
+	at bg.sofia.uni.fmi.mjt.uno.user.command.JoinGameCommand.execute(JoinGameCommand.java:34)
+	... 5 more
+
+2025-02-23T17:19:13.317574500
+bg.sofia.uni.fmi.mjt.uno.game.exception.GameException: Game is full!
+java.lang.RuntimeException: bg.sofia.uni.fmi.mjt.uno.game.exception.GameException: Game is full!
+	at bg.sofia.uni.fmi.mjt.uno.user.command.JoinGameCommand.execute(JoinGameCommand.java:36)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.handleInput(ClientRequestHandler.java:70)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:47)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: bg.sofia.uni.fmi.mjt.uno.game.exception.GameException: Game is full!
+	at bg.sofia.uni.fmi.mjt.uno.game.UnoGame.addPlayer(UnoGame.java:98)
+	at bg.sofia.uni.fmi.mjt.uno.user.UnoUser.joinGame(UnoUser.java:118)
+	at bg.sofia.uni.fmi.mjt.uno.user.command.JoinGameCommand.execute(JoinGameCommand.java:34)
+	... 5 more
+
+2025-02-23T17:19:35.292777300
+bg.sofia.uni.fmi.mjt.uno.game.exception.GameException: Game is full!
+java.lang.RuntimeException: bg.sofia.uni.fmi.mjt.uno.game.exception.GameException: Game is full!
+	at bg.sofia.uni.fmi.mjt.uno.user.command.JoinGameCommand.execute(JoinGameCommand.java:36)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.handleInput(ClientRequestHandler.java:70)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:47)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: bg.sofia.uni.fmi.mjt.uno.game.exception.GameException: Game is full!
+	at bg.sofia.uni.fmi.mjt.uno.game.UnoGame.addPlayer(UnoGame.java:98)
+	at bg.sofia.uni.fmi.mjt.uno.user.UnoUser.joinGame(UnoUser.java:118)
+	at bg.sofia.uni.fmi.mjt.uno.user.command.JoinGameCommand.execute(JoinGameCommand.java:34)
+	... 5 more
+
+2025-02-23T17:22:16.055872900
+bg.sofia.uni.fmi.mjt.uno.game.exception.GameException: Game is full!
+java.lang.RuntimeException: bg.sofia.uni.fmi.mjt.uno.game.exception.GameException: Game is full!
+	at bg.sofia.uni.fmi.mjt.uno.user.command.JoinGameCommand.execute(JoinGameCommand.java:36)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.handleInput(ClientRequestHandler.java:70)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:47)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: bg.sofia.uni.fmi.mjt.uno.game.exception.GameException: Game is full!
+	at bg.sofia.uni.fmi.mjt.uno.game.UnoGame.addPlayer(UnoGame.java:98)
+	at bg.sofia.uni.fmi.mjt.uno.user.UnoUser.joinGame(UnoUser.java:118)
+	at bg.sofia.uni.fmi.mjt.uno.user.command.JoinGameCommand.execute(JoinGameCommand.java:34)
+	... 5 more
+
+2025-02-23T17:28:19.256660300
+bg.sofia.uni.fmi.mjt.uno.game.exception.GameException: Game is full!
+java.lang.RuntimeException: bg.sofia.uni.fmi.mjt.uno.game.exception.GameException: Game is full!
+	at bg.sofia.uni.fmi.mjt.uno.user.command.JoinGameCommand.execute(JoinGameCommand.java:36)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.handleInput(ClientRequestHandler.java:70)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:47)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: bg.sofia.uni.fmi.mjt.uno.game.exception.GameException: Game is full!
+	at bg.sofia.uni.fmi.mjt.uno.game.UnoGame.addPlayer(UnoGame.java:98)
+	at bg.sofia.uni.fmi.mjt.uno.user.UnoUser.joinGame(UnoUser.java:118)
+	at bg.sofia.uni.fmi.mjt.uno.user.command.JoinGameCommand.execute(JoinGameCommand.java:34)
+	... 5 more
+
+2025-05-10T05:48:17.498641500
+Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1116)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1103)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:190)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at bg.sofia.uni.fmi.mjt.uno.server.ClientRequestHandler.run(ClientRequestHandler.java:40)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-05-10T05:53:49.408161700
+Error occurred during loading the accounts!
+java.io.IOException: Stream closed
+bg.sofia.uni.fmi.mjt.uno.database.account.loader.exception.DatabaseLoadingException: Error occurred during loading the accounts!
+java.io.IOException: Stream closed
+	at bg.sofia.uni.fmi.mjt.uno.database.account.loader.FromStreamLoader.loadAccounts(FromStreamLoader.java:42)
+	at bg.sofia.uni.fmi.mjt.uno.server.Server.<init>(Server.java:47)
+	at bg.sofia.uni.fmi.mjt.uno.server.Server.getInstance(Server.java:57)
+	at bg.sofia.uni.fmi.mjt.uno.server.Server.main(Server.java:106)
+Caused by: java.io.UncheckedIOException: java.io.IOException: Stream closed
+	at java.base/java.io.BufferedReader$1.hasNext(BufferedReader.java:684)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:132)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:727)
+	at bg.sofia.uni.fmi.mjt.uno.database.account.loader.FromStreamLoader.loadAccounts(FromStreamLoader.java:37)
+	... 3 more
+Caused by: java.io.IOException: Stream closed
+	at java.base/sun.nio.cs.StreamDecoder.ensureOpen(StreamDecoder.java:58)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:186)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:190)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at java.base/java.io.BufferedReader$1.hasNext(BufferedReader.java:681)
+	... 11 more
+
+2025-05-19T22:33:26.400799300
+database2.txt (The system cannot find the file specified)
+java.io.FileNotFoundException: database2.txt (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/java.io.FileReader.<init>(FileReader.java:60)
+	at bg.sofia.uni.fmi.mjt.uno.server.Server.<init>(Server.java:45)
+	at bg.sofia.uni.fmi.mjt.uno.server.Server.getInstance(Server.java:56)
+	at bg.sofia.uni.fmi.mjt.uno.server.Server.main(Server.java:105)
+
