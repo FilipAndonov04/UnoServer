@@ -1,9 +1,0 @@
-username=ivan password=
-username=ivan123 password=ÍÚÅÒ
-username=ivan20 password=
-username=my password=ÒÅÑÉ
-username=hello password=ÛÓÖÐÈ
-username=123 password=
-username=17 password=
-username=34 password=
-username=123ads password=Å×ÈÅ×È
