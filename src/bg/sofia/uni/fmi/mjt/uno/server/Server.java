@@ -30,6 +30,8 @@ public class Server extends Thread {
     private static final String SECRET_KEY_FILE_NAME = "secret.key";
     private static final String ERROR_FILE_NAME = "serverErrors.txt";
 
+    private static final int MAX_CLIENTS = 1000;
+
     private static Server instance;
 
     private final Database database;
@@ -84,9 +86,10 @@ public class Server extends Thread {
 
     @Override
     public void run() {
+        Thread.currentThread().setName("Server Thread");
         isRunning = true;
         try (ServerSocket serverSocket = new ServerSocket(SERVER_PORT);
-             ExecutorService executor = Executors.newCachedThreadPool()) {
+             ExecutorService executor = Executors.newFixedThreadPool(MAX_CLIENTS)) {
 
             Socket clientSocket;
             while (isRunning) {

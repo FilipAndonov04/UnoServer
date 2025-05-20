@@ -97,6 +97,11 @@ public class UnoGame implements Game {
         if (players.size() == maxPlayerCount) {
             throw new GameException("Game is full!");
         }
+        if (players.stream()
+            .anyMatch(p -> p.getUsername().equals(player.getUsername()))) {
+            throw new GameException("Player must have unique display name!");
+        }
+
         players.add(player);
     }
 
@@ -192,7 +197,7 @@ public class UnoGame implements Game {
 
     @Override
     public String toString() {
-        return "Game : [id = " + id + ", player count = " + maxPlayerCount + ", status = " + gameStatus + "]";
+        return "Game : [id = " + id + ", max number of players = " + maxPlayerCount + ", status = " + gameStatus + "]";
     }
 
     @Override

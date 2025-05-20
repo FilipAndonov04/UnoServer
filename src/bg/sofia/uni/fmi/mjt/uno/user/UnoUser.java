@@ -91,13 +91,16 @@ public class UnoUser implements User {
         if (accountDataDatabase.get(account).getCreatedGame() != null) {
             throw new InvalidUserOperation("User has already created a game!");
         }
-        if (!gameDatabase.isFreeId(gameId)) {
-            throw new InvalidUserOperation("Game id must be unique!");
-        }
+        
+        synchronized (gameDatabase) {
+            if (!gameDatabase.isFreeId(gameId)) {
+                throw new InvalidUserOperation("Game id must be unique!");
+            }
 
-        Game temp = new UnoGame(Deck.getTheClassicalUnoDeck(), gameId, new UnoGameLogs(), playersCount);
-        accountDataDatabase.get(account).setCreatedGame(temp);
-        gameDatabase.addGame(temp);
+            Game game = new UnoGame(Deck.getTheClassicalUnoDeck(), gameId, new UnoGameLogs(), playersCount);
+            accountDataDatabase.get(account).setCreatedGame(game);
+            gameDatabase.addGame(game);
+        }
     }
 
     @Override

@@ -13,6 +13,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.mockito.Mockito.when;
 
 public class UnoGameTest {
 
@@ -39,6 +40,10 @@ public class UnoGameTest {
         Player mockPlayer2 = Mockito.mock(Player.class);
         Player mockPlayer3 = Mockito.mock(Player.class);
         Player mockPlayer4 = Mockito.mock(Player.class);
+        when(mockPlayer1.getUsername()).thenReturn("1");
+        when(mockPlayer2.getUsername()).thenReturn("2");
+        when(mockPlayer3.getUsername()).thenReturn("3");
+        when(mockPlayer4.getUsername()).thenReturn("4");
 
         game.addPlayer(mockPlayer1);
         game.addPlayer(mockPlayer2);
@@ -47,6 +52,36 @@ public class UnoGameTest {
         assertThrows(GameException.class, () -> game.addPlayer(mockPlayer4),
             "AddPlayer should throw when adding more players than capacity!");
         assertEquals(List.of(mockPlayer1, mockPlayer2, mockPlayer3), game.getPlayers(), "Get players should give players in game!");
+    }
+
+    @Test
+    void testAddPlayerWithUniqueDisplayName() throws GameException {
+        Player mockPlayer1 = Mockito.mock(Player.class);
+        Player mockPlayer2 = Mockito.mock(Player.class);
+        when(mockPlayer1.getUsername()).thenReturn("1");
+        when(mockPlayer2.getUsername()).thenReturn("2");
+
+        game.addPlayer(mockPlayer1);
+
+        assertDoesNotThrow(() -> game.addPlayer(mockPlayer2),
+            "AddPlayer should not throw when adding player with unique display name!");
+    }
+
+    @Test
+    void testAddPlayerWithNotUniqueDisplayName() throws GameException {
+        Player mockPlayer1 = Mockito.mock(Player.class);
+        Player mockPlayer2 = Mockito.mock(Player.class);
+        Player mockPlayer3 = Mockito.mock(Player.class);
+        when(mockPlayer1.getUsername()).thenReturn("1");
+        when(mockPlayer2.getUsername()).thenReturn("2");
+        when(mockPlayer3.getUsername()).thenReturn("1");
+
+        game.addPlayer(mockPlayer1);
+        game.addPlayer(mockPlayer2);
+
+        assertThrows(GameException.class, () -> game.addPlayer(mockPlayer3),
+            "AddPlayer should throw when adding player with not unique display name!");
+        assertEquals(List.of(mockPlayer1, mockPlayer2), game.getPlayers(), "Get players should give players in game!");
     }
 
     @Test
@@ -68,6 +103,8 @@ public class UnoGameTest {
     void testStartWithValidPlayerCount() throws GameException {
         Player mockPlayer1 = Mockito.mock(Player.class);
         Player mockPlayer2 = Mockito.mock(Player.class);
+        when(mockPlayer1.getUsername()).thenReturn("1");
+        when(mockPlayer2.getUsername()).thenReturn("2");
         game.addPlayer(mockPlayer1);
         game.addPlayer(mockPlayer2);
 
@@ -78,6 +115,8 @@ public class UnoGameTest {
     void testStartGameMoreThatOnce() throws GameException {
         Player mockPlayer1 = Mockito.mock(Player.class);
         Player mockPlayer2 = Mockito.mock(Player.class);
+        when(mockPlayer1.getUsername()).thenReturn("1");
+        when(mockPlayer2.getUsername()).thenReturn("2");
         game.addPlayer(mockPlayer1);
         game.addPlayer(mockPlayer2);
 
