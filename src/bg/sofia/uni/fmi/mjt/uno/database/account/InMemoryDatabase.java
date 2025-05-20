@@ -21,7 +21,7 @@ public class InMemoryDatabase implements Database {
     }
 
     @Override
-    public synchronized void addAccount(Account account) throws UsernameTakenException {
+    public void addAccount(Account account) throws UsernameTakenException {
         assertNotNull(account, "Account cannot be null!");
 
         synchronized (this) {
