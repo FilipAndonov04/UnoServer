@@ -14,6 +14,12 @@ public interface Player {
      */
     String getUsername();
 
+    /**
+     * Sets the username of a player
+     *
+     * @param username The new username
+     * @throws IllegalArgumentException If the username is null
+     */
     void setUsername(String username);
 
     /**
@@ -25,7 +31,7 @@ public interface Player {
     void takeCard(Card card);
 
     /**
-     * Plays a card in his hand
+     * Plays a card from his hand
      *
      * @param index The index of the card to be played
      * @return The card to be played
@@ -63,6 +69,11 @@ public interface Player {
      */
     Set<Integer> getPlayableCardsIndexes(Card card);
 
+    /**
+     * Returns text representation of the player's hand
+     *
+     * @return The text representation
+     */
     String getHandToString();
 
 }

@@ -37,6 +37,30 @@ public class UnoPlayerTest {
     }
 
     @Test
+    void testSetUsernameWithNullUsername() {
+        UnoPlayer player = new UnoPlayer("name");
+
+        assertThrows(IllegalArgumentException.class, () -> player.setUsername(null),
+            "Set username should throw IllegalArgumentException when given a null username!");
+    }
+
+    @Test
+    void testSetUsernameWithBlankUsername() {
+        UnoPlayer player = new UnoPlayer("name");
+
+        assertThrows(IllegalArgumentException.class, () -> player.setUsername(""),
+            "Set username should throw IllegalArgumentException when given a blank username!");
+    }
+
+    @Test
+    void testSetUsernameWithValidUsername() {
+        UnoPlayer player = new UnoPlayer("name");
+
+        assertDoesNotThrow(() -> player.setUsername("newName"),
+            "Set username should not throw when given a valid username!");
+    }
+
+    @Test
     void testIsHandEmptyWhenConstructed() {
         assertTrue(new UnoPlayer("name").isHandEmpty(),
             "Players hand should be empty when constructed!");

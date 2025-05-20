@@ -10,10 +10,6 @@ public class SimpleCipher implements StringCipher {
 
     private final int key;
 
-    public static int generateKey() {
-        return RANDOM_GENERATOR.nextInt(MAX_KEY_VALUE);
-    }
-
     public SimpleCipher(int key) {
         key %= MAX_KEY_VALUE;
         if (key < 0) {
@@ -47,6 +43,10 @@ public class SimpleCipher implements StringCipher {
 
     public int getKey() {
         return key;
+    }
+
+    public static int generateKey() {
+        return RANDOM_GENERATOR.nextInt(MAX_KEY_VALUE);
     }
 
     private void assertNotNull(String data) {

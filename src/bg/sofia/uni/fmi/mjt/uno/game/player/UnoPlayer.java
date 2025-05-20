@@ -14,11 +14,7 @@ public class UnoPlayer implements Player {
     private final List<Card> hand = new ArrayList<>();
 
     public UnoPlayer(String username) {
-        if (username == null || username.isBlank()) {
-            throw new IllegalArgumentException("Username cannot be null nor blank!");
-        }
-
-        this.username = username;
+        setUsername(username);
     }
 
     @Override
@@ -28,6 +24,10 @@ public class UnoPlayer implements Player {
 
     @Override
     public void setUsername(String username) {
+        if (username == null || username.isBlank()) {
+            throw new IllegalArgumentException("Username cannot be null nor blank!");
+        }
+
         this.username = username;
     }
 

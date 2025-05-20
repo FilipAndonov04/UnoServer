@@ -1,6 +1,8 @@
 package bg.sofia.uni.fmi.mjt.uno.database.account.cipher;
 
 import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -26,6 +28,12 @@ public interface StringCipher {
         try (DataInputStream dataInputStream = new DataInputStream(inputStream)) {
             int key = dataInputStream.readInt();
             return new SimpleCipher(key);
+        }
+    }
+
+    static void saveSimpleKeyInFile(int key, String fileName) throws IOException {
+        try (DataOutputStream dataOutputStream = new DataOutputStream(new FileOutputStream(fileName))) {
+            dataOutputStream.writeInt(key);
         }
     }
 
