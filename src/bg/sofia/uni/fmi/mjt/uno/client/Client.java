@@ -14,7 +14,7 @@ public class Client {
 
     private static final int SERVER_PORT = 9999;
 
-    private static final String ERROR_FILE_NAME = "clientErrors2.txt";
+    private static final String ERROR_FILE_NAME = "clientErrors.txt";
 
     private static final String END_MESSAGE = "!END!";
     private static final String SHUTDOWN_MESSAGE = "!SHUTDOWN!";

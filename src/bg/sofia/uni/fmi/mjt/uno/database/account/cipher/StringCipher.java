@@ -37,4 +37,13 @@ public interface StringCipher {
         }
     }
 
+    /**
+     * Creates a file with random encryption key
+     *
+     * @throws IOException If error occurred
+     */
+    public static void main(String[] args) throws IOException {
+        saveSimpleKeyInFile(SimpleCipher.generateKey(), "secret.key");
+    }
+
 }
