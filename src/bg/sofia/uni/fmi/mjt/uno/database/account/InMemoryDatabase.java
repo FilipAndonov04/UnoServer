@@ -60,7 +60,7 @@ public class InMemoryDatabase implements Database {
     }
 
     @Override
-    public synchronized Set<Account> getAccounts() {
+    public Set<Account> getAccounts() {
         return Collections.unmodifiableSet(accounts);
     }
 
