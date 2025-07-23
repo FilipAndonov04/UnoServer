@@ -1,0 +1,42 @@
+2025-05-21T18:20:16.928286
+Connection refused: connect
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:589)
+	at java.base/sun.nio.ch.Net.connect(Net.java:578)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:760)
+	at java.base/java.net.Socket.connect(Socket.java:695)
+	at java.base/java.net.Socket.<init>(Socket.java:564)
+	at java.base/java.net.Socket.<init>(Socket.java:328)
+	at bg.sofia.uni.fmi.mjt.uno.client.Client.main(Client.java:27)
+
+2025-06-13T12:10:33.562752900
+Connection refused: connect
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:589)
+	at java.base/sun.nio.ch.Net.connect(Net.java:578)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:760)
+	at java.base/java.net.Socket.connect(Socket.java:695)
+	at java.base/java.net.Socket.<init>(Socket.java:564)
+	at java.base/java.net.Socket.<init>(Socket.java:328)
+	at bg.sofia.uni.fmi.mjt.uno.client.Client.main(Client.java:27)
+
+2025-07-06T20:00:12.570187800
+Connection refused: connect
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:589)
+	at java.base/sun.nio.ch.Net.connect(Net.java:578)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:760)
+	at java.base/java.net.Socket.connect(Socket.java:695)
+	at java.base/java.net.Socket.<init>(Socket.java:564)
+	at java.base/java.net.Socket.<init>(Socket.java:328)
+	at bg.sofia.uni.fmi.mjt.uno.client.Client.main(Client.java:27)
+
