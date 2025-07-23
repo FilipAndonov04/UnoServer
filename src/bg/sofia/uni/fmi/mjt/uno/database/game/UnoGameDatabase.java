@@ -14,7 +14,7 @@ public class UnoGameDatabase implements GameDatabase {
     private final Map<Integer, Game> games = new HashMap<>();
 
     @Override
-    public Collection<Game> getGames(GameStatus status) {
+    public synchronized Collection<Game> getGames(GameStatus status) {
         if (status == null) {
             return getAllGames();
         }
@@ -25,7 +25,7 @@ public class UnoGameDatabase implements GameDatabase {
     }
 
     @Override
-    public Collection<Game> getAllGames() {
+    public synchronized Collection<Game> getAllGames() {
         return Collections.unmodifiableCollection(games.values());
     }
 
