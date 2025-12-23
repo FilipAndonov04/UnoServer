@@ -1,5 +1,5 @@
 Uno Game Project @ MJT 2024 - 2025 @ FMI Sofia University "St. Kliment Ohridski"
-
+```
 List ot commands:
 -----------------------------------------------------------------
 (*) Press Enter to refresh!
@@ -22,3 +22,4 @@ List ot commands:
 (*) spectate (spectates the game you have just won)
 (*) summary --game-id=<game-id> (gets a ended game summary)
 -----------------------------------------------------------------
+```
