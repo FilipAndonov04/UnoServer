@@ -1,4 +1,8 @@
-# Uno Game Project @ MJT 2024 - 2025 @ FMI Sofia University "St. Kliment Ohridski"
+# Uno Server
+
+Project @ MJT 2024 - 2025 @ FMI Sofia University "St. Kliment Ohridski"
+
+Multiplayer server for playing the game Uno 
 
 ```
 List ot commands:
